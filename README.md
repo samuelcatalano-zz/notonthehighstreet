@@ -1,6 +1,35 @@
 # Not On The High Street
 Not On The High Street - Task
 
+### notonthehighstreet.com is an online marketplace, here is a sample of some of the products available on our site:
+
+| Product code | Name | Price |
+|:-	|:-	|:-	|
+|001 	|Travel Card Holder  	| £9.25 	|
+|002 	|Personalised cufflinks  	| £45.00 	|
+|003 	|Kids T-shirt  	| £19.95 	|
+
+
+Our marketing team want to offer promotions as an incentive for
+our customers to purchase these items.
+
+> If you spend over £60, then you get 10% off your purchase  
+> If you buy 2 or more travel card holders then the price drops to
+£8.50.
+
+Our check-out can scan items in any order, and because our
+promotions will change, it needs to be flexible regarding our
+promotional rules.
+The interface to our checkout looks like this (shown in Java):
+
+`Checkout co = new Checkout(promotionalRules)`  
+`co.scan(item);`  
+`co.scan(item);`  
+`Double price = co.total();`
+
+Implement a checkout system that fulfils these requirements.
+
+
 ### Tech Stack:
 | Technology | Version |
 |--|--|
@@ -17,7 +46,7 @@ Not On The High Street - Task
 - Build project using Java 11
 - Run/Debug project from Main Application Class :: NotOnTheHighStreetMarketPlace
 
-### How to pass the application arguments:
+### Program arguments example:
 > IDE (IntelliJ, Eclipse, NetBeans):
 
 - You can just run the main class with the default arguments or change them randomly:
@@ -27,6 +56,11 @@ Not On The High Street - Task
 
 ![Image description](https://i.imgur.com/yUXmsBE.png)
 
-### How to run the tests:
+### Result example:
+![Image description](https://i.imgur.com/yI3TswZ.png)
 
+
+### How to run the tests:
 - NotOnTheHighStreetMarketPlaceTest: `notonthehighstreet.NotOnTheHighStreetMarketPlaceTest`
+- Or run `./gradlew build`
+
